@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBlog | Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <header>
+        <nav class="navbar">
+            <a href="blog.html" class="logo">DevBlog</a>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="create-post.html">Create Post</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="blog-header">
+            <span class="category-label"> TECHNOLOGY . INNOVATION . IDEAS</span>
+            <h1>Ideas That Makes Innovation Useful</h1>
+            <p>Practical articles about technology, cloud computing, cybersecurity, AI and solutions for everyday problems</p>
+        </section>
+        <!--Featured Article-->
+        <section class="featured-post">
+            <div class="featured-content">
+                <span class="post-category">CLOUD COMPUTING</span>
+                <h2>Understanding Cloud Computing: A beginner guide.</h2>
+                <p>Cloud Computing is changing the way businesses, schools, and, individuals use technology. Learn what the cloud is, how it works and why it matters.</p>
+                <a href="post.html?id=cloud-basics" class="btn">Read Article</a>
+            </div>
+        </section>
+        <!--Latest Articles-->
+        <section class="latest-post">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search articles...">
+                <button type="button" id="searchButton" class="btn">Search</button>
+            </div>
+            
+            <h2>Latest Articles</h2>
+            <div class="blog-container" id="blogContainer">
+                <!-- Article 1-->
+                 <article class="blog-card">
+                    <span class="post-category">STUDENTS</span>
+                    <h3>5 Free Ways Students Can Start Learning technology</h3>
+                    <p>You don't need expensive equipments to begin developing valuable technology skills.</p>
+                    <a href="post.html?id=student-tech" class="read-more">Read Article </a>
+                 </article>
+                 <!--Article 2-->
+                 <article class="blog-card">
+                    <span class="post-category">CYBERSECURITY</span>
+                    <h3>7 Simple Ways to Stay Safe Online</h3>
+                    <p>Learn simple cybersecurity habits that can help proteect your accounts and personal information.</p>
+                    <a href="post.html?id=online-safety" class="read-more">Read Article </a>
+                 </article>
+                 <!--Article 3-->
+                 <article class="blog-card">
+                    <span class="post-category">ENVIRONMENT</span>
+                    <h3>How Technology Can Help Farmers</h3>
+                    <p>Sensors, data and cloud technology can help farmers make better decisions about their crops and resources.</p>
+                    <a href="post.html?id=technology-farmers" class="read-more">Read Article </a>
+                 </article>
+                 <!--Article 4-->
+                 <article class="blog-card">
+                    <span class="post-category">AI</span>
+                    <h3>Artificial Intelligence Explained</h3>
+                    <p>A simple introduction to AI, howit works and where we encounter it in everyday life.</p>
+                    <a href="post.html?id=ai-explained" class="read-more">Read Article </a>
+                 </article>
+                 <!--Article 5-->
+                 <article class="blog-card">
+                    <span class="post-category">CLOUD</span>
+                    <h3>Why Businesses Are Moving to the Cloud</h3>
+                    <p>Discover how cloud platforms help businesses become more flexible, scalable and accessible.</p>
+                    <a href="post.html?id=cloud-business" class="read-more">Read Article </a>
+                 </article>
+                 <!--Article 6-->
+                 <article class="blog-card">
+                    <span class="post-category">AFRICA AND TECH</span>
+                    <h3>The Future of Technology in Africa</h3>
+                    <p>Technology has enormous potential to help solve problems and create opportunites accross Africa communities.</p>
+                    <a href="post.html?id=africa-tech" class="read-more">Read Article </a>
+                 </article>
+            </div>
+            <p id="noResults" class="no-results">No articles found. Try a different search</p>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2026 DevBlog. All rights reserved </p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

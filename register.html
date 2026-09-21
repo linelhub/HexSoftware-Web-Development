@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBlog | Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">DevBlog</a>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <div class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="create-post.html">Create Post</a></li>
+            </div>
+        </nav>
+    </header>
+    <main class="auth-container">
+        <div class="form-group">
+            <h1>Create Account</h1>
+            <p>Join DevBlog and start sharing your articles.</p>
+            <form id="registerForm" class="register-form">
+                <div class="form-group">
+                <label for="registerName">Full Name</label>
+                <input type="text" id="registerName" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                <label for="registerEmail">Email</label>
+                <input type="email" id="registerEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                <label for="registerPassword">Password</label>
+                <input type="password" id="registerPassword" placeholder="Create a password" required>
+                </div>
+                <button type="submit" class="btn">Create Account</button>
+            </form>
+
+            <p id="registerMessage"></p>
+            <p>Already have an account?<a href="login.html" class="btw">Login</a></p>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
