@@ -3,129 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Skillora</title>
+    <title>DevBlog | Contact</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-     <!--Navigation-->
+    <!--Navigation Bar-->
     <header>
         <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">SKILLORA</a>
-            </div>
-            <ul class="nav-links">
+            <a href="contact.html" class="logo">DevBlog</a>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="create-post.html">Create Post</a></li>
             </ul>
-            <a href="courses.html" class="nav-button">Explore Courses</a>
         </nav>
     </header>
-
-    <!--Contact Hero-->
-    <section class="contact-hero">
-        <div class="contact-hero-content">
-            <span class="section-label">GET IN TOUCH</span>
-        
-            <h1>We'd Love to Hear From You</h1>
-            <p>Have a question about a course or Skillora? Send us a message and our team will be happy to help</p>
-        </div>
-    </section>
     <!--Contact Section-->
-    <section class="contact-secction">
-        <div class="contact-container">
-            <!--Contact Information-->
-            <div class="contact-info">
-                <span class="section-label">CONTACT US</span>
-                <h2>Let's Start a Conversation</h2>
-                <p>Whether you need help choosing a course, have feedback, or simply want to learn more about Skillora, we're here to help.</p>
-                <div class="contact-details">
-                    <div class="contact-detail">
-                        <div class="contact-icon">📧</div>
-                        <div>
-                            <h3>Email</h3>
-                            <p>supportskillora@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-icon">📞</div>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>+237 652 260 547</p>
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Cameroon</p>
-                        </div>
-                    </div>
+    <main>
+        <section class="contact-section">
+            <span class="categorry-label">GET IN TOUCH</span>
+            <h1>Contact DevBlog</h1>
+            <p class="contact-intro">
+                Have a question, suggestion, or technology topic you'd like us to cover? send us a message.
+            </p>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 </div>
-            </div>
-
-            <!--Contact Form-->
-            <div class="contact-form-container">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="What would you like to discuss?">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" rows="6" placeholder="Write your message here..."></textarea>
-                    </div>
-
-                    <button type="submit" class="contact-submit">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!--CTA-->
-    <section class="cta">
-        <div class="cta-content">
-            <h2>Ready to Start Learning?</h2>
-            <p>Explore our courses and begin building practical digital skills with Skillora.</p>
-            <a href="courses.html" class="primary-button">Explore Courses</a>
-        </div>
-    </section>
-
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea name="message" id="message" rows="6" placeholder="Write your message..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <p id="contactMessage" class="contact-message"></p>
+        </section>
+    </main>
     <!--Footer-->
-<footer>
-<div class="footer-content">
-    <div>
-        <h3>Skillora</h3>
-        <p>Learn. Build. Grow. Succeed.</p>
-    </div>
-    <div>
-        <h4>Quike Links</h4>
-        <a href="index.html">Home</a>
-        <a href="courses.html">Courses</a>
-        <a href="instructors.html"Instructors></a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
-    <div>
-        <h4>Connect</h4>
-        <p>Email: supportskillora@gmail.com</p>
-        <p>Phone: +237 652 260 547</p>
-    </div>
-</div>
-<div class="footer-bottom">
-    <p>&copy; 2026 Skillora. All Rights Reserved.</p>
-</div>
-</footer>
-<script src="js/script.js"></script>
+    <footer>
+        <p>&copy; 2026 DevBlog. All rights reserved</p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
