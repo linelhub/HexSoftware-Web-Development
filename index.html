@@ -3,116 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevBlog | Home</title>
+    <title>Skillora | Learn. Build. Grow. Succeed</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!--Navigation Bar-->
+    <!--Navigation-->
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">DevBlog</a>
-            <button class="menu-toggle" id="menuToggle">☰</button>
-            <ul class="nav-links" id="navLinks">
+            <div class="logo">
+                <a href="index.html">SKILLORA</a>
+            </div>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="create-post.html">Create Post</a></li>
             </ul>
+            <a href="courses.html" class="nav-button">Explore Courses</a>
         </nav>
     </header>
-    <!--Main Section-->
+    <!--Hero Section-->
     <main>
         <section class="hero">
-            <h1>Welcome to DevBlog</h1>
-            <p>Our goal is to provide useful, easy to understand technology information that helps people learn, solve problems, and make better decisions about technology..</p>
-            <a href="blog.html" class="btn">Read My Blog</a>
+            <div class="hero-content">
+                <p class="hero-subtitle">LEARN WITHOUT LIMITS</p>
+                <h1>Turn knowledge Into<span>Real Skills</span></h1>
+                <p class="hero-description">Learn practical skills in Cloud Computing, Web Development, Data Science, and Cybersecurity from experienced instructors, and develop the skills you need to achieve your personal and professional goals.</p>
+                <div class="hero-buttons">
+                    <a href="courses.html" class="primary-button">Explore Courses</a>
+                    <a href="about.html" class="secondary-button">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-learning.jpg" alt="Student lerning online">
+            </div>
         </section>
 
-        <!-- What DevBlog Offers -->
-<section class="features-section">
+        <!--Categories-->
+        <section class="Categories">
+            <div class="section-heading">
+                <p>EXPLORE</p>
+                <h2>Popular Categories</h2>
+            </div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">☁</div>
+                    <h3>Cloud Computing</h3>
+                    <p>Build your knowledge of cloud platforms and technologies.</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Learn HTML, CSS, JavaScript and modern web technologies.</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">📊</div>
+                    <h3>Data Science</h3>
+                    <p>Explore data analysis, visualization and machine learning.</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🔐</div>
+                    <h3>Cybersecurity</h3>
+                    <p>Learn the Fundamentals of protecting Systems and data.</p>
+                </div>
+            </div>
+        </section>
 
-    <span class="category-label">WHAT WE COVER</span>
+        <!--Featured Courses-->
+        <section class="featured-courses">
+            <div class="section-heading">
+            <p>START LEARNING</p>
+            <h2>Featured Courses</h2>
+            <span>Learn from carefully selected courses designed to build practical skills.</span>
+            </div>
+            <div class="course-grid">
+                <!--Course 1-->
+                <article class="course-card">
+                    <img src="images/cloud-computing.jpg" alt="Cloud computing course">
+                    <div class="course-content">
+                        <span class="course-category">Cloud Computing</span>
+                        <h3>Cloud Computing Essentials</h3>
+                        <p>Understanding cloud concepts, services, deployment models and modern cloud infrastructure.</p>
+                        <div class="course-info">
+                            <span>🤵Daniel Carter</span>
+                            <span>⭐ 4.9</span>
+                        </div>
+                        <div class="course-buttom">
+                            <strong>$69.99</strong>
+                            <a href="cloud-computing.html">View Course</a>
+                        </div>
+                    </div>
+                </article>
 
-    <h2>Technology Made Useful</h2>
+                <!--Course 2-->
+                <article class="course-card">
+                    <img src="images/web-development.jpg" alt="Web development course">
+                    <div class="course-content">
+                        <span class="course-category">Web Development</span>
+                        <h3>Complete Web Development Foundamentals</h3>
+                        <p>Learning the foundations of HTML, CSS and JavaScript while building practical websites</p>
+                        <div class="course-info">
+                            <span>🤵🏼Alex Morgan</span>
+                            <span>⭐ 4.8</span>
+                        </div>
+                        <div class="course-buttom">
+                            <strong>$49.99</strong>
+                            <a href="web-development.html">View Course</a>
+                        </div>
+                    </div>
+                </article>
 
-    <p class="features-intro">
-        Learn practical technology concepts and discover
-        how digital tools can solve real-world problems.
-    </p>
+                <!--Course 3-->
+                <article class="course-card">
+                    <img src="images/data-science.jpg" alt="Data Science course">
+                    <div class="course-content">
+                        <span class="course-category">Data Science</span>
+                        <h3>Introduction to Data Science</h3>
+                        <p>Discover how data can be collected, analyzed and transformed into useful insights.</p>
+                        <div class="course-info">
+                            <span>👩‍🔬Sarah Williams</span>
+                            <span>⭐ 4.7</span>
+                        </div>
+                        <div class="course-buttom">
+                            <strong>$59.99</strong>
+                            <a href="data-science.html">View Course</a>
+                        </div>
+                    </div>
+                </article>
+                <!--Course 4-->
+                <article class="course-card">
+                    <img src="images/cyber-security.jpg" alt="Cybersecurity course">
+                    <div class="course-content">
+                        <span class="course-category">Cybersecurity</span>
+                        <h3>Introduction to Cybersecurity</h3>
+                        <p>Learn the fundamentals of cybersecurity, common threats, security principles, and how to protect digital systems and information.</p>
+                        <div class="course-info">
+                            <span>👩‍🔬Mary Jouan</span>
+                            <span>⭐ 4.6</span>
+                        </div>
+                        <div class="course-buttom">
+                            <strong>$79.99</strong>
+                            <a href="cybersecurity.html">View Course</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <div class="features-container">
-
-        <div class="feature-card">
-            <div class="feature-icon">☁️</div>
-            <h3>Cloud Computing</h3>
-            <p>
-                Understand cloud technology and how it is
-                changing the way people and businesses use
-                computing resources.
-            </p>
-        </div>
-
-
-        <div class="feature-card">
-            <div class="feature-icon">🤖</div>
-            <h3>Artificial Intelligence</h3>
-            <p>
-                Explore AI concepts, applications and how
-                intelligent systems are solving everyday
-                problems.
-            </p>
-        </div>
-
-
-        <div class="feature-card">
-            <div class="feature-icon">🔐</div>
-            <h3>Cybersecurity</h3>
-            <p>
-                Learn simple ways to protect your information,
-                accounts and digital activities.
-            </p>
-        </div>
-
-
-        <div class="feature-card">
-            <div class="feature-icon">📡</div>
-            <h3>IoT & Innovation</h3>
-            <p>
-                Discover how connected devices and sensors
-                can collect information and create useful
-                solutions.
-            </p>
-        </div>
-
+        <!--Why Skillora-->
+        <section class="why-us">
+            <div class="why-content">
+                <p class="section-label">WHY SKILLORA</p>
+                <h2>Learn skills that can make a diffrence.</h2>
+                <p>Skillora provides accessible learning experiences designed to help students and professionals develop practical, career-focused skills.</p>
+                <div class="benefits">
+                    <div class="benefit">
+                        <span>✔</span>
+                         <div>
+                            <h3>Practical Learning</h3>
+                            <p>focus on useful, real-world skills.</p>
+                         </div>
+                    </div>
+                    <div class="benefit">
+                        <span>✔</span>
+                         <div>
+                            <h3>Experienced Instructors</h3>
+                            <p>Learn from knowledgeable professionals.</p>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <span>✔</span>
+                         <div>
+                            <h3>Flexible Learning</h3>
+                            <p>Learn at your own pace and schedule.</p>
+                </div>
+            </div>
+         </div>
     </div>
-
 </section>
 
-
-<!-- Explore Blog -->
-<section class="explore-section">
-
-    <span class="category-label">EXPLORE DEVBLOG</span>
-
-    <h2>Learn Something New</h2>
-
-    <p>
-        Explore our articles and discover practical ideas
-        about technology and digital skills.
-    </p>
-
-    <a href="blog.html" class="btn">
-        Explore Articles 
-    </a>
-
+<section class="cta">
+    <h2>Ready to start learning?</h2>
+    <p>Explore our courses and take the next step toward your goals.</p>
+    <a href="courses.html" class="primary-button">Browse All Courses</a>
 </section>
-    </main>
 
-    <!--Footer-->
-    <footer>
-        <p>&copy; 2026 DevBlog. All rights reserved</p>
-    </footer>
-    <script src="js/script.js"></script>
+</main>
+
+<!--Footer-->
+<footer>
+<div class="footer-content">
+    <div>
+        <h3>Skillora</h3>
+        <p>Learn. Build. Grow. Succeed.</p>
+    </div>
+    <div>
+        <h4>Quike Links</h4>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="instructors.html"Instructors></a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div>
+        <h4>Connect</h4>
+        <p>Email: supportskillora@gmail.com</p>
+        <p>Phone: +237 652 260 547</p>
+    </div>
+</div>
+<div class="footer-bottom">
+    <p>&copy; 2026 Skillora. All Rights Reserved.</p>
+</div>
+</footer>
+<script src="js/script.js"></script>
 </body>
 </html>
